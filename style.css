@@ -442,7 +442,7 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     align-content: start;
-    row-gap: 5vw;
+    row-gap: 15vw;
   }
 
   .portfolio1 {
