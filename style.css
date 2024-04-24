@@ -38,6 +38,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
 }
 
 .navbar-left {
@@ -445,6 +446,7 @@ footer {
     justify-content: space-between;
     flex-direction: column-reverse;
     row-gap: 3vw;
+    position: absolute;
   }
 
   .navbar-left {
@@ -509,7 +511,7 @@ footer {
   }
 
   .page1-infotxt {
-    bottom: 10vw;
+    bottom: 25vw;
     left: 5vw;
     position: absolute;
     z-index: 1;
