@@ -101,15 +101,10 @@ nav {
   height: 60%;
   width: 100%;
   padding: 0% 1vw;
-  background-color: #f0f0f0;
+  background-color: #F0F0F0;
 }
 
-/* .portfolio-v iframe {
-  width: 100%;
-  height: 90%;
-  overflow: hidden;
-} */
-.portfolio-v video {
+.portfolio-v iframe {
   width: 100%;
   height: 90%;
   overflow: hidden;
@@ -356,7 +351,7 @@ footer {
   margin-right: 1vw;
 }
 
-@media (max-width: 600px) {
+@media (max-width:600px) {
   @font-face {
     font-family: meet;
     src: url(./font/meet.woff2);
@@ -466,15 +461,10 @@ footer {
     height: 60%;
     width: 100%;
     padding: 0% 1vw;
-    background-color: #f0f0f0;
+    background-color: #F0F0F0;
   }
 
-  /* .portfolio-v iframe {
-    width: 100%;
-    height: 90%;
-    overflow: hidden;
-  } */
-  .portfolio-v video {
+  .portfolio-v iframe {
     width: 100%;
     height: 90%;
     overflow: hidden;
@@ -724,4 +714,5 @@ footer {
     font-weight: 100;
     margin-right: 5vw;
   }
+
 }
