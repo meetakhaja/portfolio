@@ -101,10 +101,15 @@ nav {
   height: 60%;
   width: 100%;
   padding: 0% 1vw;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
-.portfolio-v iframe {
+/* .portfolio-v iframe {
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+} */
+.portfolio-v video {
   width: 100%;
   height: 90%;
   overflow: hidden;
@@ -351,7 +356,7 @@ footer {
   margin-right: 1vw;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   @font-face {
     font-family: meet;
     src: url(./font/meet.woff2);
@@ -461,10 +466,15 @@ footer {
     height: 60%;
     width: 100%;
     padding: 0% 1vw;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
   }
 
-  .portfolio-v iframe {
+  /* .portfolio-v iframe {
+    width: 100%;
+    height: 90%;
+    overflow: hidden;
+  } */
+  .portfolio-v video {
     width: 100%;
     height: 90%;
     overflow: hidden;
@@ -583,7 +593,7 @@ footer {
   }
 
   .page4-main {
-    height: 80%;
+    height: 90%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -597,7 +607,7 @@ footer {
     width: 90%;
     background-color: #f0f0f0;
     border-radius: 10px;
-    padding: 1vw 1vw;
+    padding: 2vw 4vw;
     padding-right: 8vw;
   }
 
@@ -617,7 +627,7 @@ footer {
     color: #1c1d20;
     font-size: 16px;
     font-weight: 100;
-    margin-top: 3vw;
+    margin-top: 6vw;
   }
 
   footer {
@@ -714,5 +724,4 @@ footer {
     font-weight: 100;
     margin-right: 5vw;
   }
-
 }
