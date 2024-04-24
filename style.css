@@ -42,7 +42,6 @@ body {
 
 .navbar-left {
   color: white;
-  font-size: 18px;
 }
 
 .navbar-right {
@@ -56,10 +55,8 @@ body {
   text-decoration: none;
   color: white;
   background-color: #00000099;
-  padding: 4px 15px;
+  padding: 2px 10px;
   border-radius: 5px;
-  border-bottom: 1px solid white;
-  border-right: 1px solid white;
 }
 
 .moving-text {
@@ -98,7 +95,6 @@ body {
 
   to {
     transform: translate(-100%);
-
   }
 }
 
@@ -146,7 +142,7 @@ body {
   width: 30vw;
   display: flex;
   align-items: start;
-  justify-content: space-around;
+  justify-content: space-evenly;
   flex-direction: column;
 }
 
@@ -157,7 +153,7 @@ body {
   height: 60%;
   width: 100%;
   padding: 0% 1vw;
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
 }
 
 .portfolio-v iframe {
@@ -204,9 +200,8 @@ body {
   font-size: 18px;
   font-family: meet;
   font-weight: 100;
-  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.5);
   color: black;
-  border-radius: 5px;
 }
 
 #page3 {
@@ -404,7 +399,7 @@ footer {
   margin-right: 1vw;
 }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
   @font-face {
     font-family: meet;
     src: url(./font/meet.woff2);
@@ -447,13 +442,11 @@ footer {
     justify-content: space-between;
     flex-direction: column-reverse;
     row-gap: 3vw;
-    position: absolute;
   }
 
   .navbar-left {
     width: 100%;
     color: white;
-    font-size: 22px;
   }
 
   .navbar-right {
@@ -462,17 +455,14 @@ footer {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 5vw;
   }
 
   .navbar-right a {
     text-decoration: none;
     color: white;
     background-color: #00000099;
-    padding: 4px 15px;
-    border-radius: 5px;
-    border-bottom: 2px solid white;
-    border-right: 2px solid white;
+    padding: 1vw 2vw;
+    border-radius: 2px;
   }
 
   .moving-text {
@@ -511,18 +501,20 @@ footer {
 
     to {
       transform: translate(-100%);
-
     }
   }
 
   .page1-infotxt {
-    bottom: 5%;
-    left: 2vw;
+    bottom: 10vw;
+    left: 5vw;
     position: absolute;
-    color: white;
-    font-size: 12px;
-    font-weight: 100;
     z-index: 1;
+  }
+
+  .page1-infotxt h1 {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
   }
 
   #page2 {
@@ -556,10 +548,10 @@ footer {
 
   .portfolio1 {
     height: 400px;
-    width: 90vw;
+    width: 95vw;
     display: flex;
     align-items: start;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
   }
 
@@ -570,7 +562,7 @@ footer {
     height: 60%;
     width: 100%;
     padding: 0% 1vw;
-    background-color: #F0F0F0;
+    background-color: #f0f0f0;
   }
 
   .portfolio-v iframe {
@@ -612,14 +604,14 @@ footer {
   }
 
   #page2 a {
-    padding: 0.5vw 2vw;
+    padding: 1vw 2vw;
     text-decoration: none;
     font-size: 18px;
     font-family: meet;
     font-weight: 100;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     color: black;
-    border-radius: 5px;
+    border-radius: 0px;
   }
 
   #page3 {
@@ -797,7 +789,6 @@ footer {
     font-weight: 100;
     color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
-
   }
 
   .footer-end1-1 h4 {
@@ -815,7 +806,6 @@ footer {
     font-weight: 100;
     color: rgba(255, 255, 255, 0.5);
     font-size: 12px;
-
   }
 
   .footer-end2 span a {
@@ -824,5 +814,4 @@ footer {
     font-weight: 100;
     margin-right: 5vw;
   }
-
 }
