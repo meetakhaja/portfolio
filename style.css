@@ -33,7 +33,7 @@ body {
   transform: translateX(-50%);
 }
 
-nav {
+.navbar {
   padding: 2vw 2vw;
   display: flex;
   align-items: center;
@@ -42,6 +42,7 @@ nav {
 
 .navbar-left {
   color: white;
+  font-size: 18px;
 }
 
 .navbar-right {
@@ -54,6 +55,11 @@ nav {
 .navbar-right a {
   text-decoration: none;
   color: white;
+  background-color: #00000099;
+  padding: 4px 15px;
+  border-radius: 5px;
+  border-bottom: 1px solid white;
+  border-right: 1px solid white;
 }
 
 .moving-text {
@@ -61,7 +67,7 @@ nav {
   overflow-x: auto;
   white-space: nowrap;
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   z-index: 1;
 }
 
@@ -94,6 +100,16 @@ nav {
     transform: translate(-100%);
 
   }
+}
+
+.page1-infotxt {
+  bottom: 40%;
+  left: 2vw;
+  position: absolute;
+  color: white;
+  font-size: 16px;
+  font-weight: 100;
+  z-index: 1;
 }
 
 #page2 {
@@ -424,7 +440,7 @@ footer {
     transform: translateX(-50%);
   }
 
-  nav {
+  .navbar {
     padding: 2vw 2vw;
     display: flex;
     align-items: center;
@@ -437,6 +453,7 @@ footer {
   .navbar-left {
     width: 100%;
     color: white;
+    font-size: 22px;
   }
 
   .navbar-right {
@@ -445,12 +462,17 @@ footer {
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
-    gap: 15vw;
+    gap: 5vw;
   }
 
   .navbar-right a {
     text-decoration: none;
     color: white;
+    background-color: #00000099;
+    padding: 4px 15px;
+    border-radius: 5px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
   }
 
   .moving-text {
@@ -491,6 +513,16 @@ footer {
       transform: translate(-100%);
 
     }
+  }
+
+  .page1-infotxt {
+    bottom: 5%;
+    left: 2vw;
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    font-weight: 100;
+    z-index: 1;
   }
 
   #page2 {
