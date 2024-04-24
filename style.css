@@ -56,6 +56,46 @@ nav {
   color: white;
 }
 
+.moving-text {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 10%;
+  z-index: 1;
+}
+
+.moving-text-con {
+  white-space: nowrap;
+  display: inline-block;
+  animation-name: move;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.moving-text-con h1 {
+  display: inline-block;
+  font-size: 10vw;
+  font-weight: 100;
+  color: white;
+}
+
+.moving-text::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes move {
+  from {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translate(-100%);
+
+  }
+}
+
 #page2 {
   min-height: 180vh;
   width: 100%;
@@ -271,7 +311,7 @@ footer {
 .footer-top {
   height: 40%;
   width: 80%;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -298,7 +338,7 @@ footer {
   font-weight: 100;
   color: white;
   border-radius: 50px;
-  border: 1px solid white;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 1vw 2vw;
 }
 
@@ -320,15 +360,11 @@ footer {
 
 .footer-end1-1 p {
   font-weight: 100;
-  color: white;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
 }
 
 .footer-end1-1 h4 {
-  font-weight: 100;
-  color: white;
-}
-
-.footer-end1-1 p {
   font-weight: 100;
   color: white;
 }
@@ -340,8 +376,9 @@ footer {
 }
 
 .footer-end2 p {
-  color: white;
   font-weight: 100;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 12px;
 }
 
 .footer-end2 span a {
@@ -414,6 +451,46 @@ footer {
   .navbar-right a {
     text-decoration: none;
     color: white;
+  }
+
+  .moving-text {
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 20%;
+    z-index: 1;
+  }
+
+  .moving-text-con {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+
+  .moving-text-con h1 {
+    display: inline-block;
+    font-size: 32vw;
+    font-weight: 100;
+    color: white;
+  }
+
+  .moving-text::-webkit-scrollbar {
+    display: none;
+  }
+
+  @keyframes move {
+    from {
+      transform: translate(0);
+    }
+
+    to {
+      transform: translate(-100%);
+
+    }
   }
 
   #page2 {
@@ -597,7 +674,7 @@ footer {
     width: 90%;
     background-color: #f0f0f0;
     border-radius: 10px;
-    padding: 2vw 4vw;
+    padding: 4vw 4vw;
     padding-right: 8vw;
   }
 
@@ -633,7 +710,7 @@ footer {
   .footer-top {
     height: 40%;
     width: 80%;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     display: flex;
     align-items: center;
     justify-content: start;
@@ -656,17 +733,19 @@ footer {
   }
 
   .footer-middle a {
+    width: 100%;
     text-decoration: none;
+    text-align: center;
     font-size: 18px;
     font-weight: 100;
     color: white;
     border-radius: 50px;
-    border: 1px solid white;
-    padding: 3vw 6vw;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    padding: 4vw 6vw;
   }
 
   .footer-end {
-    padding: 0% 5vw;
+    padding: 5vw 5vw;
     min-height: 30%;
     width: 100%;
     display: flex;
@@ -684,15 +763,12 @@ footer {
 
   .footer-end1-1 p {
     font-weight: 100;
-    color: white;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+
   }
 
   .footer-end1-1 h4 {
-    font-weight: 100;
-    color: white;
-  }
-
-  .footer-end1-1 p {
     font-weight: 100;
     color: white;
   }
@@ -704,8 +780,10 @@ footer {
   }
 
   .footer-end2 p {
-    color: white;
     font-weight: 100;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 12px;
+
   }
 
   .footer-end2 span a {
