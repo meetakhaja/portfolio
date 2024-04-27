@@ -201,13 +201,13 @@ body {
   padding: 1vw 0%;
 }
 
-#page2 h2 {
+.portfolio1 h2 {
   padding: 1vw 0%;
   color: var(--color-dark);
   font-weight: 100;
 }
 
-#page2 a {
+.portfolio1 a {
   padding: 0.5vw 2vw;
   text-decoration: none;
   font-size: 18px;
@@ -215,6 +215,31 @@ body {
   font-weight: 100;
   border: 1px solid var(--color-dark-light);
   color: var(--color-dark);
+}
+
+.page2-submain {
+  margin-top: 5vw;
+  min-height: 80vh;
+  width: 80%;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.page2-submain img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.page2-submain-a {
+  text-decoration: none;
+  color: var(--color-dark);
+  background-color: var(--color-white);
+  font-weight: 100;
+  font-size: 32px;
+  padding: 2vw 4vw;
+  position: absolute;
 }
 
 #page3 {
@@ -621,13 +646,13 @@ footer {
     padding: 1vw 0%;
   }
 
-  #page2 h2 {
+  .portfolio1 h2 {
     padding: 1vw 0%;
     color: var(--color-dark);
     font-weight: 100;
   }
 
-  #page2 a {
+  .portfolio1 a {
     padding: 1vw 2vw;
     text-decoration: none;
     font-size: 18px;
@@ -636,6 +661,31 @@ footer {
     border: 1px solid var(--color-dark-light);
     color: var(--color-dark);
     border-radius: 0px;
+  }
+
+  .page2-submain {
+    margin-top: 5vw;
+    min-height: 30vh;
+    width: 95%;
+    position: relative;
+    display: grid;
+    place-items: center;
+  }
+
+  .page2-submain img {
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+  }
+
+  .page2-submain-a {
+    text-decoration: none;
+    color: var(--color-dark);
+    background-color: var(--color-white);
+    font-weight: 100;
+    font-size: 24px;
+    padding: 2vw 4vw;
+    position: absolute;
   }
 
   #page3 {
