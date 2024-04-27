@@ -2,14 +2,16 @@
   font-family: meet;
   src: url(./font/meet.woff2);
 }
-:root{
-  --mainbg:#999d9e;
-  --mainbg-black:#1c1d20;
-  --color-white:#FFFFFF;
-  --color-white-light:#f0f0f0;
-  --color-dark:#000000;
+
+:root {
+  --mainbg: #999d9e;
+  --mainbg-black: #1c1d20;
+  --color-white: #FFFFFF;
+  --color-white-light: #f0f0f0;
+  --color-dark: #000000;
   --color-dark-light: #1C1D20;
 }
+
 * {
   margin: 0;
   padding: 0;
@@ -26,7 +28,7 @@ body {
 #page1 {
   height: 100vh;
   width: 100%;
-  background-color:var(--mainbg);
+  background-color: var(--mainbg);
   overflow: hidden;
   position: relative;
 }
@@ -260,7 +262,6 @@ body {
   justify-content: center;
   border: 1px solid var(--color-dark-light);
   border-radius: 5px;
-  background-color: var(--color-white-light);
 }
 
 .skill0 img {
@@ -417,15 +418,15 @@ footer {
     src: url(./font/meet.woff2);
   }
 
-  :root{
-    --mainbg:#999d9e;
-    --mainbg-black:#1c1d20;
-    --color-white:#FFFFFF;
-    --color-white-light:#f0f0f0;
-    --color-dark:#000000;
+  :root {
+    --mainbg: #999d9e;
+    --mainbg-black: #1c1d20;
+    --color-white: #FFFFFF;
+    --color-white-light: #f0f0f0;
+    --color-dark: #000000;
     --color-dark-light: #1C1D20;
   }
-  
+
   * {
     margin: 0;
     padding: 0;
