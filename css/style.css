@@ -1,6 +1,6 @@
 @font-face {
   font-family: meet;
-  src: url(/font/meet.woff2);
+  src: url(./font/meet.woff2);
 }
 
 :root {
@@ -454,7 +454,7 @@ footer {
 @media (max-width: 600px) {
   @font-face {
     font-family: meet;
-    src: url(/font/meet.woff2);
+    src: url(./font/meet.woff2);
   }
 
   :root {
