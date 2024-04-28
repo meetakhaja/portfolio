@@ -1,15 +1,15 @@
 @font-face {
   font-family: meet;
-  src: url(./font/meet.woff2);
+  src: url(/font/meet.woff2);
 }
 
 :root {
   --mainbg: #999d9e;
-  --mainbg-black: #1c1d20;
-  --color-white: #FFFFFF;
+  --mainbg-black: hsl(0, 0%, 30%);
+  --color-white: #ffffff;
   --color-white-light: #f0f0f0;
   --color-dark: #000000;
-  --color-dark-light: #1C1D20;
+  --color-dark-light: #1c1d20;
 }
 
 * {
@@ -20,7 +20,7 @@
 
 html,
 body {
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   font-family: meet;
 }
@@ -33,7 +33,7 @@ body {
   position: relative;
 }
 
-#page1>img {
+#page1 > img {
   width: auto;
   height: 100%;
   object-fit: cover;
@@ -42,31 +42,45 @@ body {
   transform: translateX(-50%);
 }
 
-.navbar {
-  padding: 2vw 2vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  position: absolute;
-}
-
-.navbar-left {
+header > p {
+  padding: 10px 0%;
+  text-align: center;
   color: var(--color-white);
+  background-color: var(--mainbg);
+  font-size: 16px;
+  font-weight: 100;
 }
 
-.navbar-right {
-  width: 25%;
+.navbar {
+  z-index: 99;
+  width: 100%;
+  height: 50px;
+  background-color: var(--mainbg-black);
+  position: sticky;
+  top: 0;
+}
+
+.navbar ul {
+  list-style-type: none;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
-.navbar-right a {
+.navbar a {
+  padding: 0 16px;
   text-decoration: none;
   color: var(--color-white);
+  display: block;
+  line-height: 50px;
+}
+
+.navbar a:hover {
   background-color: var(--color-dark);
-  padding: 2px 10px;
-  border-radius: 5px;
+}
+
+.navbar a.active {
+  background-color: var(--color-dark);
 }
 
 .moving-text {
@@ -131,7 +145,7 @@ body {
   margin: 5vw 0%;
 }
 
-#page2>h1 {
+#page2 > h1 {
   margin: 2vw 0%;
   font-size: 42px;
   font-weight: 100;
@@ -252,7 +266,7 @@ body {
   margin: 5vw 0%;
 }
 
-#page3>h1 {
+#page3 > h1 {
   margin: 2vw 0%;
   font-size: 42px;
   font-weight: 100;
@@ -303,7 +317,7 @@ body {
   margin: 5vw 0%;
 }
 
-#page4>h1 {
+#page4 > h1 {
   margin: 2vw 0%;
   font-size: 42px;
   font-weight: 100;
@@ -440,16 +454,16 @@ footer {
 @media (max-width: 600px) {
   @font-face {
     font-family: meet;
-    src: url(./font/meet.woff2);
+    src: url(/font/meet.woff2);
   }
 
   :root {
     --mainbg: #999d9e;
-    --mainbg-black: #1c1d20;
-    --color-white: #FFFFFF;
+    --mainbg-black: hsl(0, 0%, 30%);
+    --color-white: #ffffff;
     --color-white-light: #f0f0f0;
     --color-dark: #000000;
-    --color-dark-light: #1C1D20;
+    --color-dark-light: #1c1d20;
   }
 
   * {
@@ -460,7 +474,7 @@ footer {
 
   html,
   body {
-    height: 100%;
+    min-height: 100%;
     width: 100%;
     font-family: meet;
   }
@@ -473,7 +487,7 @@ footer {
     position: relative;
   }
 
-  #page1>img {
+  #page1 > img {
     width: auto;
     height: 100%;
     object-fit: cover;
@@ -482,36 +496,45 @@ footer {
     transform: translateX(-50%);
   }
 
-  .navbar {
-    padding: 2vw 2vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column-reverse;
-    row-gap: 3vw;
-    position: absolute;
-  }
-
-  .navbar-left {
-    width: 100%;
+  header > p {
+    padding: 10px 0%;
+    text-align: center;
     color: var(--color-white);
+    background-color: var(--mainbg);
+    font-size: 16px;
+    font-weight: 100;
   }
 
-  .navbar-right {
-    display: block;
+  .navbar {
+    z-index: 99;
     width: 100%;
+    height: 50px;
+    background-color: var(--mainbg-black);
+    position: sticky;
+    top: 0;
+  }
+
+  .navbar ul {
+    list-style-type: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    justify-content: center;
   }
 
-  .navbar-right a {
+  .navbar a {
+    padding: 0 16px;
     text-decoration: none;
     color: var(--color-white);
+    display: block;
+    line-height: 50px;
+  }
+
+  .navbar a:hover {
     background-color: var(--color-dark);
-    padding: 1vw 2vw;
-    border-radius: 2px;
+  }
+
+  .navbar a:active {
+    background-color: var(--color-dark);
   }
 
   .moving-text {
@@ -576,7 +599,7 @@ footer {
     margin: 10vw 0%;
   }
 
-  #page2>h1 {
+  #page2 > h1 {
     margin: 2vw 0%;
     font-size: 32px;
     font-weight: 100;
@@ -697,7 +720,7 @@ footer {
     margin: 15vw 0%;
   }
 
-  #page3>h1 {
+  #page3 > h1 {
     margin: 2vw 0%;
     font-size: 32px;
     font-weight: 100;
@@ -748,7 +771,7 @@ footer {
     margin: 5vw 0%;
   }
 
-  #page4>h1 {
+  #page4 > h1 {
     margin: 2vw 0%;
     font-size: 32px;
     font-weight: 100;
