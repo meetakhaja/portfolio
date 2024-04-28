@@ -1,6 +1,6 @@
 @font-face {
   font-family: meet;
-  src: url(./font/meet.woff2);
+  src: url(/font/meet.woff2);
 }
 
 :root {
@@ -22,7 +22,7 @@ html,
 body {
   min-height: 100%;
   width: 100%;
-  font-family: meet;
+  font-family: meet,'Times New Roman', Times, serif;
 }
 
 #page1 {
@@ -454,7 +454,7 @@ footer {
 @media (max-width: 600px) {
   @font-face {
     font-family: meet;
-    src: url(./font/meet.woff2);
+    src: url(/font/meet.woff2);
   }
 
   :root {
