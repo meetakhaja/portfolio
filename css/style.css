@@ -1,10 +1,14 @@
 :root {
-  --mainbg: #999d9e;
-  --mainbg-black: hsl(0, 0%, 30%);
-  --color-white: #ffffff;
-  --color-white-light: #f0f0f0;
-  --color-dark: #000000;
-  --color-dark-light: #1c1d20;
+  --bg-white: hsl(0, 0%, 100%);
+  --bg-black: hsl(0, 0%, 0%);
+  --bg-blue: hsl(233, 64%, 52%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-white-light: hsl(0, 0%, 94%);
+  --color-black: hsl(0, 0%, 0%);
+  --color-black-light: hsl(225, 7%, 12%);
+  --color-blue: #0000ff;
+  --color-white-border: hsla(0, 0%, 100%, 0.5);
+  --color-black-border: hsla(0, 0%, 0%, 0.5);
 }
 
 * {
@@ -23,35 +27,27 @@ body {
 #page1 {
   height: 100vh;
   width: 100%;
-  background-color: var(--mainbg);
-  overflow: hidden;
-  position: relative;
-}
-
-#page1 > img {
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  background-color: var(--bg-blue);
 }
 
 header > p {
   padding: 10px 0%;
   text-align: center;
-  color: var(--color-white);
-  background-color: var(--mainbg);
+  color: var(--color-dark);
+  background-color: var(--bg-white);
   font-size: 16px;
+  font-weight: 200;
+  border-bottom: 1px solid var(--color-black-border);
 }
 
 .navbar {
   z-index: 99;
   width: 100%;
   height: 50px;
-  background-color: var(--mainbg-black);
+  background-color: var(--bg-white);
   position: sticky;
   top: 0;
+  border-bottom: 1px solid var(--color-black-border);
 }
 
 .navbar ul {
@@ -64,67 +60,20 @@ header > p {
 .navbar a {
   padding: 0 16px;
   text-decoration: none;
-  color: var(--color-white);
+  color: var(--color-black);
   display: block;
+  font-weight: 600;
   line-height: 50px;
 }
 
 .navbar a:hover {
-  background-color: var(--color-dark);
+  color: var(--bg-white);
+  background-color: var(--color-black);
 }
 
 .navbar a.active {
-  background-color: var(--color-dark);
-}
-
-.moving-text {
-  width: 100%;
-  overflow-x: auto;
-  white-space: nowrap;
-  position: absolute;
-  bottom: 5%;
-  z-index: 1;
-}
-
-.moving-text-con {
-  white-space: nowrap;
-  display: inline-block;
-  animation-name: move;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-}
-
-.moving-text-con h1 {
-  display: inline-block;
-  font-size: 10vw;
-  color: var(--color-white);
-}
-
-.moving-text::-webkit-scrollbar {
-  display: none;
-}
-
-@keyframes move {
-  from {
-    transform: translate(0);
-  }
-
-  to {
-    transform: translate(-100%);
-  }
-}
-
-.page1-infotxt {
-  bottom: 40%;
-  left: 2vw;
-  position: absolute;
-  z-index: 1;
-}
-
-.page1-infotxt h1 {
-  color: var(--color-white);
-  font-size: 32px;
+  color: var(--bg-white);
+  background-color: var(--color-black);
 }
 
 #page2 {
@@ -141,7 +90,8 @@ header > p {
   margin: 2vw 0%;
   font-size: 42px;
   color: var(--color-dark);
-  border-bottom: 1px solid var(--color-dark-light);
+  font-weight: 400;
+  border-bottom: 1px solid var(--color-black-border);
 }
 
 .page2-main {
@@ -182,7 +132,7 @@ header > p {
 
 .portfolio-text1 {
   width: 100%;
-  border-bottom: 1px solid var(--color-dark);
+  border-bottom: 1px solid var(--color-black-border);
 }
 
 .portfolio-s-btn {
@@ -194,9 +144,10 @@ header > p {
 }
 
 .portfolio-s-btn p {
-  color: var(--color-dark);
+  color: var(--color-black);
   font-size: 14px;
-  border-bottom: 1px solid var(--color-dark);
+  font-weight: 400;
+  border-bottom: 1px solid var(--color-black-border);
 }
 
 .portfolio-btn {
@@ -206,17 +157,19 @@ header > p {
 }
 
 .portfolio1 h2 {
-  color: var(--color-dark);
+  color: var(--color-black);
   margin-bottom: 10px;
   font-size: 26px;
+  font-weight: 400;
 }
 
 .portfolio1 a {
   padding: 16px 18px;
   text-decoration: none;
   font-size: 18px;
+  font-weight: 400;
   color: var(--color-white);
-  background-color: var(--color-dark);
+  background-color: var(--color-black);
 }
 
 .page2-submain {
@@ -236,9 +189,11 @@ header > p {
 
 .page2-submain-a {
   text-decoration: none;
-  color: var(--color-dark);
+  color: var(--color-black);
   background-color: var(--color-white);
-  font-size: 32px;
+  border-radius: 50px;
+  font-size: 22px;
+  font-weight: 600;
   padding: 2vw 4vw;
   position: absolute;
 }
@@ -256,8 +211,9 @@ header > p {
 #page3 > h1 {
   margin: 2vw 0%;
   font-size: 42px;
-  color: var(--color-dark);
-  border-bottom: 1px solid var(--color-dark-light);
+  font-weight: 400;
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-black-border);
 }
 
 .page3-container1 {
@@ -285,7 +241,7 @@ header > p {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--color-dark-light);
+  border: 1px solid var(--color-black-border);
   border-radius: 5px;
 }
 
@@ -306,8 +262,9 @@ header > p {
 #page4 > h1 {
   margin: 2vw 0%;
   font-size: 42px;
-  color: var(--color-dark);
-  border-bottom: 1px solid var(--color-dark-light);
+  font-weight: 400;
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-black-border);
 }
 
 .page4-main {
@@ -328,23 +285,26 @@ header > p {
 }
 
 .page4-1 h3 {
-  color: var(--color-dark-light);
+  color: var(--color-black-light);
   font-size: 16px;
+  font-weight: 400;
 }
 
 .page4-1 h2 {
-  color: var(--color-dark);
+  color: var(--color-black);
   font-size: 26px;
+  font-weight: 600;
 }
 
 .page4-1 p {
-  color: var(--color-dark-light);
+  color: var(--color-black-light);
   font-size: 16px;
+  font-weight: 400;
   margin-top: 3vw;
 }
 
 footer {
-  background-color: var(--mainbg-black);
+  background-color: var(--bg-black);
   height: 100vh;
   width: 100%;
   display: flex;
@@ -356,7 +316,7 @@ footer {
 .footer-top {
   height: 40%;
   width: 80%;
-  border-bottom: 1px solid var(--color-white-light);
+  border-bottom: 1px solid var(--color-white-border);
   display: flex;
   align-items: center;
   justify-content: start;
@@ -364,6 +324,7 @@ footer {
 
 .footer-top h2 {
   font-size: 4rem;
+  font-weight: 400;
   color: var(--color-white);
 }
 
@@ -379,9 +340,10 @@ footer {
 .footer-middle a {
   text-decoration: none;
   font-size: 18px;
+  font-weight: 400;
   color: var(--color-white);
   border-radius: 50px;
-  border: 1px solid var(--color-white-light);
+  border: 1px solid var(--color-white-border);
   padding: 1vw 2vw;
 }
 
@@ -404,10 +366,12 @@ footer {
 .footer-end1-1 p {
   color: var(--color-white-light);
   font-size: 12px;
+  font-weight: 400;
 }
 
 .footer-end1-1 h4 {
   color: var(--color-white);
+  font-weight: 400;
 }
 
 .footer-end2 {
@@ -419,22 +383,28 @@ footer {
 .footer-end2 p {
   color: var(--color-white-light);
   font-size: 12px;
+  font-weight: 400;
 }
 
 .footer-end2 span a {
   text-decoration: none;
   color: var(--color-white);
+  font-weight: 400;
   margin-right: 1vw;
 }
 
 @media (max-width: 600px) {
   :root {
-    --mainbg: #999d9e;
-    --mainbg-black: hsl(0, 0%, 30%);
-    --color-white: #ffffff;
-    --color-white-light: #f0f0f0;
-    --color-dark: #000000;
-    --color-dark-light: #1c1d20;
+    --bg-white: hsl(0, 0%, 100%);
+    --bg-black: hsl(0, 0%, 0%);
+    --bg-blue: hsl(233, 64%, 52%);
+    --color-white: hsl(0, 0%, 100%);
+    --color-white-light: hsl(0, 0%, 94%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-black-light: hsl(225, 7%, 12%);
+    --color-blue: #0000ff;
+    --color-white-border: hsla(0, 0%, 100%, 0.5);
+    --color-black-border: hsla(0, 0%, 0%, 0.5);
   }
 
   * {
@@ -453,35 +423,27 @@ footer {
   #page1 {
     height: 100vh;
     width: 100%;
-    background-color: var(--mainbg);
-    overflow: hidden;
-    position: relative;
-  }
-
-  #page1 > img {
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
+    background-color: var(--bg-blue);
   }
 
   header > p {
     padding: 10px 0%;
     text-align: center;
-    color: var(--color-white);
-    background-color: var(--mainbg);
+    color: var(--color-dark);
+    background-color: var(--bg-white);
     font-size: 16px;
+    font-weight: 200;
+    border-bottom: 1px solid var(--color-black-border);
   }
 
   .navbar {
     z-index: 99;
     width: 100%;
     height: 50px;
-    background-color: var(--mainbg-black);
+    background-color: var(--bg-white);
     position: sticky;
     top: 0;
+    border-bottom: 1px solid var(--color-black-border);
   }
 
   .navbar ul {
@@ -494,67 +456,20 @@ footer {
   .navbar a {
     padding: 0 16px;
     text-decoration: none;
-    color: var(--color-white);
+    color: var(--color-black);
     display: block;
+    font-weight: 600;
     line-height: 50px;
   }
 
   .navbar a:hover {
-    background-color: var(--color-dark);
+    color: var(--bg-white);
+    background-color: var(--color-black);
   }
 
   .navbar a:active {
-    background-color: var(--color-dark);
-  }
-
-  .moving-text {
-    width: 100%;
-    overflow-x: auto;
-    white-space: nowrap;
-    position: absolute;
-    bottom: 25%;
-    z-index: 1;
-  }
-
-  .moving-text-con {
-    white-space: nowrap;
-    display: inline-block;
-    animation-name: move;
-    animation-duration: 15s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-  }
-
-  .moving-text-con h1 {
-    display: inline-block;
-    font-size: 32vw;
-    color: var(--color-white);
-  }
-
-  .moving-text::-webkit-scrollbar {
-    display: none;
-  }
-
-  @keyframes move {
-    from {
-      transform: translate(0);
-    }
-
-    to {
-      transform: translate(-100%);
-    }
-  }
-
-  .page1-infotxt {
-    bottom: 25vw;
-    left: 5vw;
-    position: absolute;
-    z-index: 1;
-  }
-
-  .page1-infotxt h1 {
-    color: var(--color-white);
-    font-size: 26px;
+    color: var(--bg-white);
+    background-color: var(--color-black);
   }
 
   #page2 {
@@ -571,7 +486,8 @@ footer {
     margin: 2vw 0%;
     font-size: 32px;
     color: var(--color-dark);
-    border-bottom: 1px solid var(--color-dark-light);
+    font-weight: 400;
+    border-bottom: 1px solid var(--color-black-border);
   }
 
   .page2-main {
@@ -612,7 +528,7 @@ footer {
 
   .portfolio-text1 {
     width: 100%;
-    border-bottom: 1px solid var(--color-dark);
+    border-bottom: 1px solid var(--color-black-border);
   }
 
   .portfolio-s-btn {
@@ -624,9 +540,10 @@ footer {
   }
 
   .portfolio-s-btn p {
-    color: var(--color-dark);
+    color: var(--color-black);
     font-size: 14px;
-    border-bottom: 1px solid var(--color-dark);
+    font-weight: 400;
+    border-bottom: 1px solid var(--color-black-border);
   }
 
   .portfolio-btn {
@@ -636,17 +553,19 @@ footer {
   }
 
   .portfolio1 h2 {
-    color: var(--color-dark);
+    color: var(--color-black);
     margin-bottom: 10px;
     font-size: 26px;
+    font-weight: 400;
   }
 
   .portfolio1 a {
     padding: 16px 18px;
     text-decoration: none;
     font-size: 18px;
+    font-weight: 400;
     color: var(--color-white);
-    background-color: var(--color-dark);
+    background-color: var(--color-black);
   }
 
   .page2-submain {
@@ -666,9 +585,11 @@ footer {
 
   .page2-submain-a {
     text-decoration: none;
-    color: var(--color-dark);
+    color: var(--color-black);
     background-color: var(--color-white);
+    border-radius: 50px;
     font-size: 24px;
+    font-weight: 600;
     padding: 2vw 4vw;
     position: absolute;
   }
@@ -686,8 +607,9 @@ footer {
   #page3 > h1 {
     margin: 2vw 0%;
     font-size: 32px;
-    color: var(--color-dark);
-    border-bottom: 1px solid var(--color-dark-light);
+    font-weight: 400;
+    color: var(--color-black);
+    border-bottom: 1px solid var(--color-black-border);
   }
 
   .page3-container1 {
@@ -715,7 +637,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid var(--color-dark-light);
+    border: 1px solid var(--color-black-border);
     border-radius: 5px;
   }
 
@@ -736,8 +658,9 @@ footer {
   #page4 > h1 {
     margin: 2vw 0%;
     font-size: 32px;
-    color: var(--color-dark);
-    border-bottom: 1px solid var(--color-dark-light);
+    font-weight: 400;
+    color: var(--color-black);
+    border-bottom: 1px solid var(--color-black-border);
   }
 
   .page4-main {
@@ -760,23 +683,26 @@ footer {
   }
 
   .page4-1 h3 {
-    color: var(--color-dark-light);
+    color: var(--color-black-light);
     font-size: 16px;
+    font-weight: 400;
   }
 
   .page4-1 h2 {
-    color: var(--color-dark);
+    color: var(--color-black);
     font-size: 26px;
+    font-weight: 600;
   }
 
   .page4-1 p {
-    color: var(--color-dark-light);
+    color: var(--color-black-light);
     font-size: 16px;
+    font-weight: 400;
     margin-top: 6vw;
   }
 
   footer {
-    background-color: var(--mainbg-black);
+    background-color: var(--bg-black);
     height: 100vh;
     width: 100%;
     display: flex;
@@ -788,7 +714,7 @@ footer {
   .footer-top {
     height: 40%;
     width: 80%;
-    border-bottom: 1px solid var(--color-white-light);
+    border-bottom: 1px solid var(--color-white-border);
     display: flex;
     align-items: center;
     justify-content: start;
@@ -796,6 +722,7 @@ footer {
 
   .footer-top h2 {
     font-size: 4rem;
+    font-weight: 400;
     color: var(--color-white);
   }
 
@@ -814,9 +741,10 @@ footer {
     text-decoration: none;
     text-align: center;
     font-size: 18px;
+    font-weight: 400;
     color: var(--color-white);
     border-radius: 50px;
-    border: 1px solid var(--color-white-light);
+    border: 1px solid var(--color-white-border);
     padding: 4vw 6vw;
   }
 
@@ -840,10 +768,12 @@ footer {
   .footer-end1-1 p {
     color: var(--color-white-light);
     font-size: 12px;
+    font-weight: 400;
   }
 
   .footer-end1-1 h4 {
     color: var(--color-white);
+    font-weight: 400;
   }
 
   .footer-end2 {
@@ -855,11 +785,13 @@ footer {
   .footer-end2 p {
     color: var(--color-white-light);
     font-size: 12px;
+    font-weight: 400;
   }
 
   .footer-end2 span a {
     text-decoration: none;
     color: var(--color-white);
+    font-weight: 400;
     margin-right: 5vw;
   }
 }
