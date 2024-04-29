@@ -43,7 +43,6 @@ header > p {
   color: var(--color-white);
   background-color: var(--mainbg);
   font-size: 16px;
-  font-weight: 100;
 }
 
 .navbar {
@@ -99,7 +98,6 @@ header > p {
 .moving-text-con h1 {
   display: inline-block;
   font-size: 10vw;
-  font-weight: 100;
   color: var(--color-white);
 }
 
@@ -127,7 +125,6 @@ header > p {
 .page1-infotxt h1 {
   color: var(--color-white);
   font-size: 32px;
-  font-weight: 100;
 }
 
 #page2 {
@@ -143,7 +140,6 @@ header > p {
 #page2 > h1 {
   margin: 2vw 0%;
   font-size: 42px;
-  font-weight: 100;
   color: var(--color-dark);
   border-bottom: 1px solid var(--color-dark-light);
 }
@@ -211,7 +207,6 @@ header > p {
 
 .portfolio1 h2 {
   color: var(--color-dark);
-  font-weight: 100;
   margin-bottom: 10px;
   font-size: 26px;
 }
@@ -220,7 +215,6 @@ header > p {
   padding: 16px 18px;
   text-decoration: none;
   font-size: 18px;
-  font-weight: 100;
   color: var(--color-white);
   background-color: var(--color-dark);
 }
@@ -244,7 +238,6 @@ header > p {
   text-decoration: none;
   color: var(--color-dark);
   background-color: var(--color-white);
-  font-weight: 100;
   font-size: 32px;
   padding: 2vw 4vw;
   position: absolute;
@@ -263,7 +256,6 @@ header > p {
 #page3 > h1 {
   margin: 2vw 0%;
   font-size: 42px;
-  font-weight: 100;
   color: var(--color-dark);
   border-bottom: 1px solid var(--color-dark-light);
 }
@@ -314,7 +306,6 @@ header > p {
 #page4 > h1 {
   margin: 2vw 0%;
   font-size: 42px;
-  font-weight: 100;
   color: var(--color-dark);
   border-bottom: 1px solid var(--color-dark-light);
 }
@@ -339,19 +330,16 @@ header > p {
 .page4-1 h3 {
   color: var(--color-dark-light);
   font-size: 16px;
-  font-weight: 100;
 }
 
 .page4-1 h2 {
   color: var(--color-dark);
   font-size: 26px;
-  font-weight: 100;
 }
 
 .page4-1 p {
   color: var(--color-dark-light);
   font-size: 16px;
-  font-weight: 100;
   margin-top: 3vw;
 }
 
@@ -377,7 +365,6 @@ footer {
 .footer-top h2 {
   font-size: 4rem;
   color: var(--color-white);
-  font-weight: 100;
 }
 
 .footer-middle {
@@ -392,7 +379,6 @@ footer {
 .footer-middle a {
   text-decoration: none;
   font-size: 18px;
-  font-weight: 100;
   color: var(--color-white);
   border-radius: 50px;
   border: 1px solid var(--color-white-light);
@@ -416,13 +402,11 @@ footer {
 }
 
 .footer-end1-1 p {
-  font-weight: 100;
   color: var(--color-white-light);
   font-size: 12px;
 }
 
 .footer-end1-1 h4 {
-  font-weight: 100;
   color: var(--color-white);
 }
 
@@ -433,7 +417,6 @@ footer {
 }
 
 .footer-end2 p {
-  font-weight: 100;
   color: var(--color-white-light);
   font-size: 12px;
 }
@@ -441,7 +424,6 @@ footer {
 .footer-end2 span a {
   text-decoration: none;
   color: var(--color-white);
-  font-weight: 100;
   margin-right: 1vw;
 }
 
@@ -491,7 +473,6 @@ footer {
     color: var(--color-white);
     background-color: var(--mainbg);
     font-size: 16px;
-    font-weight: 100;
   }
 
   .navbar {
@@ -547,7 +528,6 @@ footer {
   .moving-text-con h1 {
     display: inline-block;
     font-size: 32vw;
-    font-weight: 100;
     color: var(--color-white);
   }
 
@@ -575,7 +555,6 @@ footer {
   .page1-infotxt h1 {
     color: var(--color-white);
     font-size: 26px;
-    font-weight: 100;
   }
 
   #page2 {
@@ -591,7 +570,6 @@ footer {
   #page2 > h1 {
     margin: 2vw 0%;
     font-size: 32px;
-    font-weight: 100;
     color: var(--color-dark);
     border-bottom: 1px solid var(--color-dark-light);
   }
@@ -659,7 +637,6 @@ footer {
 
   .portfolio1 h2 {
     color: var(--color-dark);
-    font-weight: 100;
     margin-bottom: 10px;
     font-size: 26px;
   }
@@ -668,7 +645,6 @@ footer {
     padding: 16px 18px;
     text-decoration: none;
     font-size: 18px;
-    font-weight: 100;
     color: var(--color-white);
     background-color: var(--color-dark);
   }
@@ -692,7 +668,6 @@ footer {
     text-decoration: none;
     color: var(--color-dark);
     background-color: var(--color-white);
-    font-weight: 100;
     font-size: 24px;
     padding: 2vw 4vw;
     position: absolute;
@@ -711,7 +686,6 @@ footer {
   #page3 > h1 {
     margin: 2vw 0%;
     font-size: 32px;
-    font-weight: 100;
     color: var(--color-dark);
     border-bottom: 1px solid var(--color-dark-light);
   }
@@ -762,7 +736,6 @@ footer {
   #page4 > h1 {
     margin: 2vw 0%;
     font-size: 32px;
-    font-weight: 100;
     color: var(--color-dark);
     border-bottom: 1px solid var(--color-dark-light);
   }
@@ -789,19 +762,16 @@ footer {
   .page4-1 h3 {
     color: var(--color-dark-light);
     font-size: 16px;
-    font-weight: 100;
   }
 
   .page4-1 h2 {
     color: var(--color-dark);
     font-size: 26px;
-    font-weight: 100;
   }
 
   .page4-1 p {
     color: var(--color-dark-light);
     font-size: 16px;
-    font-weight: 100;
     margin-top: 6vw;
   }
 
@@ -827,7 +797,6 @@ footer {
   .footer-top h2 {
     font-size: 4rem;
     color: var(--color-white);
-    font-weight: 100;
   }
 
   .footer-middle {
@@ -845,7 +814,6 @@ footer {
     text-decoration: none;
     text-align: center;
     font-size: 18px;
-    font-weight: 100;
     color: var(--color-white);
     border-radius: 50px;
     border: 1px solid var(--color-white-light);
@@ -870,13 +838,11 @@ footer {
   }
 
   .footer-end1-1 p {
-    font-weight: 100;
     color: var(--color-white-light);
     font-size: 12px;
   }
 
   .footer-end1-1 h4 {
-    font-weight: 100;
     color: var(--color-white);
   }
 
@@ -887,7 +853,6 @@ footer {
   }
 
   .footer-end2 p {
-    font-weight: 100;
     color: var(--color-white-light);
     font-size: 12px;
   }
@@ -895,7 +860,6 @@ footer {
   .footer-end2 span a {
     text-decoration: none;
     color: var(--color-white);
-    font-weight: 100;
     margin-right: 5vw;
   }
 }
