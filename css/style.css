@@ -53,7 +53,7 @@ body {
 }
 
 .hero-section-left h4 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 400;
   color: var(--color-white-light);
   margin-top: 1vw;
@@ -63,8 +63,9 @@ body {
   font-size: 18px;
   font-weight: 400;
   color: var(--color-white);
-  margin-top: 3vw;
-  margin-bottom: 2vw;
+  margin-top: 2vw;
+  margin-bottom: 3vw;
+  padding-right: 12vw;
 }
 
 .hero-section-left a {
@@ -73,8 +74,8 @@ body {
   color: var(--color-white);
   background-color: var(--color-black);
   text-decoration: none;
-  padding: 1vw 2vw;
-  border-radius: 5px;
+  padding: 18px 22px;
+  border-radius: 0px;
 }
 
 .hero-section-right {
@@ -89,9 +90,6 @@ body {
   width: 60%;
   border-right: 10px solid var(--color-black);
   border-bottom: 10px solid var(--color-black);
-  border-top-left-radius: 25px;
-  border-top-right-radius: 25px;
-  border-bottom-left-radius: 25px;
 }
 
 header > p {
@@ -99,8 +97,8 @@ header > p {
   text-align: center;
   color: var(--color-dark);
   background-color: var(--bg-white);
-  font-size: 16px;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 300;
   border-bottom: 1px solid var(--color-black-border);
 }
 
@@ -132,13 +130,11 @@ header > p {
 
 .navbar a:hover {
   font-weight: 600;
-  text-decoration: underline;
   color: var(--color-black);
 }
 
 .navbar a.active {
   font-weight: 600;
-  text-decoration: underline;
   color: var(--bg-black);
 }
 
@@ -342,10 +338,10 @@ header > p {
 }
 
 .page4-1 {
-  height: 100%;
+  height: 80%;
   width: 30%;
   background-color: var(--color-white-light);
-  border-radius: 10px;
+  border-radius: 5px;
   padding: 1vw 1vw;
   padding-right: 8vw;
 }
@@ -359,12 +355,12 @@ header > p {
 .page4-1 h2 {
   color: var(--color-black);
   font-size: 26px;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .page4-1 p {
   color: var(--color-black-light);
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
   margin-top: 3vw;
 }
@@ -478,46 +474,99 @@ footer {
 }
 
 .contact-details {
-  min-height: 70vh;
-  width: 35%;
+  min-height: 50vh;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-color: var(--bg-black);
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .contact-details a {
-  width: 80%;
+  width: 25%;
   text-decoration: none;
   text-align: center;
   font-size: 18px;
   font-weight: 400;
-  color: var(--color-white);
-  border: 1px solid var(--color-white-border);
-  border-radius: 5px;
+  color: var(--color-black);
+  border: 1px solid var(--color-black-border);
+  border-radius: 25px;
   padding: 1vw 2vw;
   margin-top: 8px;
 }
 
 .contact-details p {
-  text-align: start;
+  width: 100%;
+  text-align: center;
   font-size: 18px;
   font-weight: 400;
   color: var(--color-white);
   background-color: var(--bg-blue);
-  border-radius: 5px;
-  padding: 6px 18px;
-  margin-bottom: 3vw;
+  border-radius: 0px;
+  padding: 12px 22px;
+  margin-bottom: 2vw;
 }
 
 .contact-details h4 {
   text-align: start;
   font-size: 18px;
   font-weight: 400;
-  color: var(--color-white);
+  color: var(--color-black);
   margin-top: 2vw;
+}
+
+/* about -section*/
+#about-section {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: column;
+}
+
+.about {
+  min-height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-black);
+}
+
+.about-left {
+  height: 60vh;
+  width: 50%;
+  padding: 42px 28px;
+  align-content: center;
+}
+
+.about-left h2 {
+  color: var(--color-white);
+  font-size: 36px;
+  font-weight: 400;
+}
+
+.about-left p {
+  color: var(--color-white-light);
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 2vw;
+  padding-right: 16vw;
+}
+
+.about-right {
+  height: 60vh;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-right img {
+  width: 80%;
+  border-radius: 50px;
 }
 
 @media (max-width: 600px) {
@@ -577,7 +626,7 @@ footer {
   }
 
   .hero-section-left h4 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 400;
     color: var(--color-white-light);
     margin-top: 4vw;
@@ -597,8 +646,8 @@ footer {
     color: var(--color-white);
     background-color: var(--color-black);
     text-decoration: none;
-    padding: 3vw 6vw;
-    border-radius: 5px;
+    padding: 4vw 8vw;
+    border-radius: 0px;
   }
 
   .hero-section-right {
@@ -613,18 +662,15 @@ footer {
     width: 60%;
     border-right: 10px solid var(--color-black);
     border-bottom: 10px solid var(--color-black);
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
   }
 
   header > p {
-    padding: 10px 0%;
+    padding: 10px 5%;
     text-align: center;
     color: var(--color-dark);
     background-color: var(--bg-white);
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 14px;
+    font-weight: 300;
     border-bottom: 1px solid var(--color-black-border);
   }
 
@@ -656,13 +702,13 @@ footer {
 
   .navbar a:hover {
     font-weight: 600;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: var(--color-dark);
   }
 
   .navbar a:active {
     font-weight: 600;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     color: var(--color-dark);
   }
 
@@ -673,7 +719,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    margin: 10vw 0%;
+    margin: 0% 0%;
   }
 
   #page2 > h1 {
@@ -861,8 +907,8 @@ footer {
     height: 30%;
     width: 90%;
     background-color: var(--color-white-light);
-    border-radius: 10px;
-    padding: 4vw 4vw;
+    border-radius: 5px;
+    padding: 6vw 4vw;
     padding-right: 8vw;
   }
 
@@ -874,14 +920,14 @@ footer {
 
   .page4-1 h2 {
     color: var(--color-black);
-    font-size: 26px;
-    font-weight: 600;
+    font-size: 28px;
+    font-weight: 400;
     margin-top: 2vw;
   }
 
   .page4-1 p {
     color: var(--color-black-light);
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
     margin-top: 8vw;
   }
@@ -990,19 +1036,11 @@ footer {
     flex-direction: column;
   }
 
-  #contact-section > h1 {
-    margin: 2vw 0%;
-    font-size: 42px;
-    font-weight: 400;
-    color: var(--color-black);
-    border-bottom: 1px solid var(--color-black-border);
-  }
-
   .contact-details {
-    min-height: 80vh;
+    min-height: 50vh;
     width: 100%;
     display: flex;
-    background-color: var(--bg-black);
+    background-color: var(--bg-white);
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -1015,29 +1053,84 @@ footer {
     text-align: center;
     font-size: 18px;
     font-weight: 400;
-    color: var(--color-white);
-    border: 1px solid var(--color-white-border);
-    border-radius: 5px;
+    color: var(--color-black);
+    border: 1px solid var(--color-black-border);
+    border-radius: 25px;
     padding: 4vw 6vw;
     margin-top: 2vw;
   }
 
   .contact-details p {
-    text-align: start;
+    width: 100%;
+    text-align: center;
     font-size: 18px;
     font-weight: 400;
     color: var(--color-white);
     background-color: var(--color-blue);
-    border-radius: 5px;
-    margin-bottom: 10vw;
-    padding: 6px 18px;
+    border-radius: 0px;
+    margin-bottom: 0;
+    padding: 14px 22px;
   }
 
   .contact-details h4 {
     text-align: start;
     font-size: 18px;
     font-weight: 400;
+    color: var(--color-black);
+    margin-top: 7vw;
+  }
+
+  /* about -section*/
+  #about-section {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  .about {
+    min-height: 60vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    background-color: var(--bg-black);
+  }
+
+  .about-left {
+    height: 60vh;
+    width: 100%;
+    padding: 24px 24px;
+    align-content: start;
+  }
+
+  .about-left h2 {
     color: var(--color-white);
-    margin-top: 10vw;
+    font-size: 32px;
+    font-weight: 400;
+  }
+
+  .about-left p {
+    color: var(--color-white-light);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 6vw;
+    padding-right: 0;
+  }
+
+  .about-right {
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-right img {
+    width: 90%;
+    border-radius: 50px;
   }
 }
